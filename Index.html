@@ -3,13 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTA</title>
-    <link rel="stylesheet" href="/src/style/style.css">
-    <link rel="stylesheet" href="/src/javascript/scritp.js">
+    <title>Listas De Tareas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="src/style/style.css">
 </head>
 <body>
-   
-</div>
-</P>
+    <div class="container">
+        <div class="inicio">
+          <div id="fecha"></div>
+          <h1>Tareas, De sergio andres</h1>
+          <span>seccion para terminar y verificar las tareas dejadas</span>
+        </div>
+    
+        <div class="anexar-tarea">
+          <input type="text" id="input" placeholder="añadir la tarea">
+          <i id="boton-enter" class="fa fa-check-circle" aria-hidden="true"></i>
+        </div>
+    
+        <div class="añadir_descripcion" id="descripcion">
+          <textarea id="descripcion-tarea" placeholder="Descripcion"></textarea>
+        </div>
+    
+        <div class="container2-tarea">
+          <h3>Estas son tus Tareas Pendientes </h3>
+          <ul id="lista">
+            
+          </ul>
+        </div>
+      </div>
+    
+      <script src="src/javascript/scritp.js"></script>
 </body>
 </html>
