@@ -9,12 +9,16 @@ const lineThrough = 'line-through'
 let LIST
 let id = 0;// para que inicielice en 0 cada tarea tendra un id diferente
 
-//creacion de la fecha actualizada 
+//creacion de la fecha actualizada dinamicamente todos los dias
 
 const FECHA = new Date ()
-fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday: 'long', month: 'short', day:'numeric'})
+fecha.innerHTML = FECHA.toLocaleDateString('es-MX', {
+    weekday: 'long',
+    month: 'short',
+    day: 'numeric',
+  });
 
-// funcion de agregar tarea 
+// funcion de agregar la tarea que se realizara juntos a las otras funciones 
 
 function agregarTarea( tarea,id,realizado,eliminado) {
     if(eliminado) {return} 
@@ -34,7 +38,7 @@ function agregarTarea( tarea,id,realizado,eliminado) {
 }
 
 
-// funcion de Tarea Realizada 
+// funcion de Tarea completada 
 
 function tareaRealizada(element) {
     element.classList.toggle(check)
@@ -117,5 +121,3 @@ if(data){
     LIST = []
     id = 0
 }
-
-
